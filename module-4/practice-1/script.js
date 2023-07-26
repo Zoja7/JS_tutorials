@@ -45,8 +45,7 @@
 
 // console.log(getTotalPrice(3, 150));
 
-// *****Можливість не огортати параметри 
-// в круглі дужки якщо параметр один *****\\
+// *****Можливість не огортати параметри в круглі дужки якщо параметр один*****\\
 
 // Один параметр з дужками
 /**
@@ -261,26 +260,3 @@
 
 // calculateAveragePrice(products, onSuccess, onError);
 // calculateAveragePrice([], onSuccess, onError);
-
-const orderedItems = [
-  { item: "Apple", price: 0.99 },
-  { item: "Banana", price: 0.49 },
-  { item: "Orange", price: 0.79 },
-  { item: "Mango", price: 1.99 },
-];
-
-function calculateTotalPrice(orderedItems) {
-    let totalPrice = 0;
-  // Change code below this line
-
-  // for (let i = 0; i < orderedItems.length; i += 1) {
-  //   totalPrice += orderedItems[i];
-  // }
-
-  totalPrice = orderedItems.forEach(({ item }) => price);
-  // Change code above this line
-  return totalPrice;
-}
-
-
-console.log(calculateTotalPrice(orderedItems));
