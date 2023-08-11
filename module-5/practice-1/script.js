@@ -200,29 +200,29 @@
 // Створіть функцію яка буде приймати 1 параметр (максимально дозволену швидкість)
 // та виводити повідомлення чи ми рухаємось з безпечною швидкістю чи перевищуємо, функція має опрацьовувати об'єкт автомобіля як this
 
-const SAFE_SPEED = 60;
+// const SAFE_SPEED = 60;
 
-const tesla = {
-  brand: "Tesla",
-  speed: 30,
-};
+// const tesla = {
+//   brand: "Tesla",
+//   speed: 30,
+// };
 
-const audi = {
-  brand: "Audi",
-  speed: 100,
-};
+// const audi = {
+//   brand: "Audi",
+//   speed: 100,
+// };
 
-function speedSensor(maxSpeed) {
-  const isClientSpeeding = this.speed > maxSpeed;
-  const speedingScore = isClientSpeeding ? this.speed - maxSpeed : null;
+// function speedSensor(maxSpeed) {
+//   const isClientSpeeding = this.speed > maxSpeed;
+//   const speedingScore = isClientSpeeding ? this.speed - maxSpeed : null;
 
-  return isClientSpeeding
-    ? `Ви перевищуєте на ${speedingScore}км/год. Поліція виїхала`
-    : "Все добре. Їдьте далі. Поліція слідкує";
-}
+//   return isClientSpeeding
+//     ? `Ви перевищуєте на ${speedingScore}км/год. Поліція виїхала`
+//     : "Все добре. Їдьте далі. Поліція слідкує";
+// }
 
-console.log(speedSensor.call(audi, SAFE_SPEED));
-console.log(speedSensor.call(tesla, SAFE_SPEED));
+// console.log(speedSensor.call(audi, SAFE_SPEED));
+// console.log(speedSensor.call(tesla, SAFE_SPEED));
 
 // Task-4 Калькулятор
 // Створіть об'єкт calculator з трьома методами:
@@ -248,3 +248,35 @@ console.log(speedSensor.call(tesla, SAFE_SPEED));
 // console.log(calculator);
 // console.log(calculator.add());
 // console.log(calculator.mult());
+
+//Напишіть функцію caclculateAverage()
+//яка приймає довільну кількість аргументів
+// і повертає їхнє середнє значення.
+//Додати перевірку, що аргументи це числа.
+// (10,20,30,"hello");
+
+
+// function calculateAverage(...args) {
+//  const arr = [];
+//   let sum = 0;
+//   let counter = 0;
+
+//   for (let value of args) {
+//     arr.push(value);
+
+//     if (typeof value === 'number') {
+//       sum += value;
+//       counter++;
+//     }
+//     else {
+//         console.log(`The value - ${value} is not a number`);
+//     }
+//   }
+
+//   const average = sum / counter;
+//   return `The average is: ${average}`;
+  
+// }
+
+// console.log(calculateAverage(10, 20, 30, 'hello'));
+

@@ -22,14 +22,14 @@
 // console.log(templateLiteral);
 
 //* Example 6 - Методи рядків та чейнінг
-let weight = "88,3";
-let height = "1.75";
+// let weight = "88,3";
+// let height = "1.75";
 
-const bmi = (
-  Number.parseFloat(weight.replace(",", ".")) /
-  Number.parseFloat(height) ** 2
-).toFixed(2);
-console.log(bmi); //індекс маси тіла
+// const bmi = (
+//   Number.parseFloat(weight.replace(",", ".")) /
+//   Number.parseFloat(height) ** 2
+// ).toFixed(2);
+// console.log(bmi); //індекс маси тіла
 
 
 //* Example 7 - Оператори порівняння та приведення типів
@@ -95,3 +95,27 @@ console.log(bmi); //індекс маси тіла
 // let y = checkStorage(100, 50);
 
 // console.log(checkStorage(100, 50));
+
+
+/*******A few simple task******https://code.mu/ru/javascript/tasker/stager/1/1/***** */
+
+// function checkNumber(a) {
+//   // if (a < 0) {
+//   //   console.log(`number${a} is negative`);
+//   // } else {
+//   //   console.log(`number ${a} is positive`);
+//   // }
+
+//   return a < 0 ? console.log(`number${a} is negative`) : console.log(`number ${a} is positive`);
+// }
+
+// checkNumber(2);
+
+
+// function showStringLength(b) { 
+
+//   return typeof b ==="string" ? b.length : `this is not a string`;
+
+// }
+// console.log(showStringLength(7));
+// console.log(showStringLength("Hellow world"))
